@@ -776,4 +776,35 @@ footer .text i {
     .say .col h2 {
         padding-left: 0;
     }
+
+}
+@media (max-width: 767px) {
+  header nav ul {
+    display: flex;
+    justify-content: center; /* تخلي العناصر تتوزع في النص */
+    flex-wrap: wrap; /* علشان لو العناصر كتيرة تنزل سطر جديد */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  header nav ul li {
+  header nav ul li {
+    margin: 5px; /* مسافة صغيرة بين العناصر */
+  }
+
+  header nav ul a {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* خط بسيط يفصل العناصر */
+    transition: 0.3s;
+  }
+
+  header nav ul a:hover {
+    background-color: rgba(244, 67, 54, 0.8); /* لون hover للموبايل */
+  }
+}
 }
